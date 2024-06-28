@@ -32,7 +32,12 @@ public class MedicalRemindTileService extends TileService {
         };
         IntentFilter filter = new IntentFilter(MyConstant.ACTION_MESSAGE_UPDATE);
         ContextCompat.registerReceiver(this.getApplicationContext(), updateReceiver, filter, ContextCompat.RECEIVER_EXPORTED);
+
+        IntentFilter filter1 = new IntentFilter(MyConstant.ACTION_INIT);
+        ContextCompat.registerReceiver(this.getApplicationContext(), updateReceiver, filter1, ContextCompat.RECEIVER_EXPORTED);
     }
+
+
 
 
     @Override

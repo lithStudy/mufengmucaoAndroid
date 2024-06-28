@@ -47,6 +47,11 @@
                 <action android:name="ACTION_REPLY"/>
             </intent-filter>
         </receiver>
+        <receiver android:name=".notify.InitAlarmReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="ACTION_REPLY"/>
+            </intent-filter>
+        </receiver>
 
 
         <service

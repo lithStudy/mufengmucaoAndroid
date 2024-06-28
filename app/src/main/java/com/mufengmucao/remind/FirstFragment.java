@@ -66,6 +66,10 @@ public class FirstFragment extends Fragment {
         IntentFilter filter1 = new IntentFilter(MyConstant.ACTION_MESSAGE_UPDATE);
         ContextCompat.registerReceiver(getContext(), updateReceiver, filter1, ContextCompat.RECEIVER_EXPORTED);
 
+        //监听到初始化事件
+        IntentFilter filter2 = new IntentFilter(MyConstant.ACTION_INIT);
+        ContextCompat.registerReceiver(getContext(), updateReceiver, filter2, ContextCompat.RECEIVER_EXPORTED);
+
     }
 
 
