@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test;
+package com.mufengmucao.remind;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

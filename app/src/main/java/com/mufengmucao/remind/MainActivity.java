@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test;
+package com.mufengmucao.remind;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.snackbar.Snackbar;
-import com.mufengmucao.remind_test.databinding.ActivityMainBinding;
-import com.mufengmucao.remind_test.helper.AlarmHelper;
-import com.mufengmucao.remind_test.notify.MedicalRemindSender;
+import com.mufengmucao.remind.databinding.ActivityMainBinding;
+import com.mufengmucao.remind.helper.AlarmHelper;
+import com.mufengmucao.remind.notify.MedicalRemindSender;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,18 +36,11 @@ public class MainActivity extends AppCompatActivity {
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                // 切换用药状态
-//                boolean currentState = RemindDataUtil.readTileStateForToday(getApplicationContext());
-//                RemindDataUtil.writeTileStateForToday(getApplicationContext(), !currentState);
-
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "这是一个测试", Snackbar.LENGTH_LONG)
                         .setAnchorView(R.id.fab)
                         .setAction("Action", null).show();
 
                 MedicalRemindSender.send(MainActivity.this);
-
-
             }
 
         });

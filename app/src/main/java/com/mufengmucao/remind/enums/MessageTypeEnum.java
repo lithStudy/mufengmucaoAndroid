@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test.enums;
+package com.mufengmucao.remind.enums;
 
 public enum MessageTypeEnum {
     MEDICAL(1, "用药提醒"),

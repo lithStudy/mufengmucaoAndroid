@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mufengmucao.remind_test"
+    namespace = "com.mufengmucao.remind"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mufengmucao.remind_test"
+        applicationId = "com.mufengmucao.remind"
         minSdk = 34
         targetSdk = 34
         versionCode = 1

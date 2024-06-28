@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test.helper;
+package com.mufengmucao.remind.helper;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.widget.Toast;
-import com.mufengmucao.remind_test.notify.MedicalRemindAlarmReceiver;
+import com.mufengmucao.remind.notify.MedicalRemindAlarmReceiver;
 
 import java.util.Calendar;
 

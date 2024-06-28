@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test;
+package com.mufengmucao.remind;
 
 import org.junit.Test;
 

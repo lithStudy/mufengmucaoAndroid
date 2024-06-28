@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test.notify;
+package com.mufengmucao.remind.notify;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -10,9 +10,9 @@ import android.os.Build;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
-import com.mufengmucao.remind_test.R;
-import com.mufengmucao.remind_test.constants.MyConstant;
-import com.mufengmucao.remind_test.helper.MessageUtil;
+import com.mufengmucao.remind.R;
+import com.mufengmucao.remind.constants.MyConstant;
+import com.mufengmucao.remind.helper.MessageUtil;
 
 
 public class MedicalRemindSender {
@@ -51,7 +51,7 @@ public class MedicalRemindSender {
         );
         NotificationCompat.Action actionButton1 = new NotificationCompat.Action.Builder(
                 R.drawable.ic_launcher_background, // 第一个按钮的图标
-                "done", // 第一个按钮的文本
+                "完成", // 第一个按钮的文本
                 actionPendingIntent1
         ).build();
         //4.2 添加按钮到通知

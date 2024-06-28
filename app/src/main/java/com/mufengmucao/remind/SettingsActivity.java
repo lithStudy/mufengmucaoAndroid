@@ -1,13 +1,11 @@
-package com.mufengmucao.remind_test;
+package com.mufengmucao.remind;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TimePicker;
-import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.mufengmucao.remind_test.helper.AlarmHelper;
+import com.mufengmucao.remind.helper.AlarmHelper;
 
 import java.util.Calendar;
 

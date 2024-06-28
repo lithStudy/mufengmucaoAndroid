@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test;
+package com.mufengmucao.remind;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,10 +13,10 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import com.mufengmucao.remind_test.constants.MyConstant;
-import com.mufengmucao.remind_test.databinding.FragmentFirstBinding;
-import com.mufengmucao.remind_test.helper.MedicalStateDataUtil;
-import com.mufengmucao.remind_test.helper.MessageUtil;
+import com.mufengmucao.remind.constants.MyConstant;
+import com.mufengmucao.remind.databinding.FragmentFirstBinding;
+import com.mufengmucao.remind.helper.MedicalStateDataUtil;
+import com.mufengmucao.remind.helper.MessageUtil;
 
 public class FirstFragment extends Fragment {
 
@@ -42,9 +42,7 @@ public class FirstFragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                NavHostFragment.findNavController(FirstFragment.this)
-//                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
-                textViewContent.setText(MedicalStateDataUtil.readAllData(getContext()));
+                textViewContent.setText(MedicalStateDataUtil.showState(getContext()), TextView.BufferType.SPANNABLE);
             }
         });
 
@@ -53,7 +51,7 @@ public class FirstFragment extends Fragment {
             @Override
             public void onReceive(Context context, Intent intent) {
                 //重新读取文件内容并更新UI
-                textViewContent.setText(MedicalStateDataUtil.readAllData(getContext()));
+                textViewContent.setText(MedicalStateDataUtil.showState(getContext()), TextView.BufferType.SPANNABLE);
 
                 // 清除通知
                 NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
@@ -75,7 +73,7 @@ public class FirstFragment extends Fragment {
     public void onResume() {
         super.onResume();
         // 在这里刷新数据
-        textViewContent.setText(MedicalStateDataUtil.readAllData(getContext()));
+        textViewContent.setText(MedicalStateDataUtil.showState(getContext()), TextView.BufferType.SPANNABLE);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test.tile;
+package com.mufengmucao.remind.tile;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.util.Log;
 import androidx.core.content.ContextCompat;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
-import com.mufengmucao.remind_test.constants.MyConstant;
-import com.mufengmucao.remind_test.helper.MedicalStateDataUtil;
+import com.mufengmucao.remind.constants.MyConstant;
+import com.mufengmucao.remind.helper.MedicalStateDataUtil;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
 

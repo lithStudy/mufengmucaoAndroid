@@ -1,11 +1,11 @@
-package com.mufengmucao.remind_test.notify;
+package com.mufengmucao.remind.notify;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import androidx.core.app.NotificationManagerCompat;
-import com.mufengmucao.remind_test.constants.MyConstant;
-import com.mufengmucao.remind_test.helper.MedicalStateDataUtil;
+import com.mufengmucao.remind.constants.MyConstant;
+import com.mufengmucao.remind.helper.MedicalStateDataUtil;
 
 public class MedicalRemindMessageDealReceiver extends BroadcastReceiver {
 

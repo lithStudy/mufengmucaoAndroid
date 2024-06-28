@@ -1,4 +1,4 @@
-package com.mufengmucao.remind_test.constants;
+package com.mufengmucao.remind.constants;
 
 public class MyConstant {
     public static final String ACTION_TILE_UPDATE = "mufengmucao.ACTION_TILE_UPDATE";

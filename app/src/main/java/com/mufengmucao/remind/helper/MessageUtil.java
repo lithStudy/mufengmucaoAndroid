@@ -1,6 +1,6 @@
-package com.mufengmucao.remind_test.helper;
+package com.mufengmucao.remind.helper;
 
-import com.mufengmucao.remind_test.enums.MessageTypeEnum;
+import com.mufengmucao.remind.enums.MessageTypeEnum;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
