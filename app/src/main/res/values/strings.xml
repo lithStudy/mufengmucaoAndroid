@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">沐风牧草</string>
+    <string name="action_settings">设置</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">用药记录</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="refresh">刷新</string>
+    <string name="previous">Previous</string>
+    <string name="channel_name">用药提醒</string>
+    <string name="channel_description">提醒用药事件</string>
+    <string name="tile_service_label">用药提醒</string>
+
+    <string name="lorem_ipsum">
+        为了我的健康\n\n
+        这是用药记录
+    </string>
+</resources>
