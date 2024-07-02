@@ -91,7 +91,10 @@ public class MedicalStateDataUtil {
 
         // 更新或添加指定日期的状态
         dateStatusMap.put(dateString, state);
-
+        //根据key倒序排序
+        dateStatusMap = dateStatusMap.entrySet().stream()
+                .sorted(Map.Entry.<String, Boolean>comparingByKey().reversed())
+                .collect(HashMap::new, (m, v) -> m.put(v.getKey(), v.getValue()), HashMap::putAll);
         // 将Map内容写回文件
         try (FileOutputStream fos = context.openFileOutput(FILE_NAME, Context.MODE_PRIVATE)) {
             for (Map.Entry<String, Boolean> entry : dateStatusMap.entrySet()) {
